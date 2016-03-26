@@ -1,0 +1,22 @@
+{
+  "name": "learn",
+  "authors": [
+    "Pavel <19paul91@mail.ru>"
+  ],
+  "description": "teuouo",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^2.2.1"
+  }
+}

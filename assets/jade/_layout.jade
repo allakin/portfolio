@@ -1,0 +1,45 @@
+doctype html
+//- html(lang="ru").open-right-mobile-menu
+html(lang="ru")
+  head
+    block title
+      title Portfolio
+
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    //- meta(name="viewport", content="width=device-width, initial-scale=1 user-scalable=no maximum-scale=1")
+
+    meta(name="keywords", content="")
+    meta(name="author", content="")
+    meta(name="description", content="")
+
+    meta(property="og:type", content="article")
+    meta(property="og:url", content="test url")
+    meta(property="og:title", content="test title")
+    meta(property="og:description", content="test description")
+    meta(property="og:image", content="image_url")
+
+    meta(name="twitter:card", content="")
+    meta(name="twitter:site", content="")
+    meta(name="twitter:creator", content="")
+
+    meta(name="robots" content="noindex,nofollow")
+
+    link(href="css/reset.css", rel="stylesheet")
+    link(href="css/main.css", rel="stylesheet")
+
+    block style
+    block header_script
+
+  body
+    header
+      include componets/_sidebar
+    section.main.clearfix
+      block content
+  
+    script(src="js/jquery.js")
+    script(src="js/main.js")
+
+    block script
+    
