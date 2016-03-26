@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - 0.12
+env:
+  global:
+    - GH_REF: github.com/allakin/portfolio
+    - secure: iihsDtKgLvfW3yw9H0FbOdNQ/zlZ3gLzS5pYpMxwN1t6aAP6o1H3+EqWVfgULtgt4QSmbD/4JIIOluQ8egZ2NwmTPOi6s6HfVV501J0ygP6a5ScLQkwu5HgZOoHk3i7gc68Uj1GC+5/2FQA0FHNxCXzSXZPtJYTlZseLHfZAnQ5gFkzsRhW+eWvDX+TUfehMyyKM1vIoFlVnnT3sMWuAmK5Oy6B0TdqjwjMww2K8AgGwL5l2SQsflM7iQ2zd2QpdNITRXggvrpjLLT8ufhWKjMoqkOMNWfPWJED4Si9XLCaeVO8GiMVeG4uouE7xB9isxaBaTtxjNulqYKPbQZTJiDeI+WaCMr6BeWvILb1tyTSi6CpwW1mFIrg8n4uJ+i9OyoxpsqRiWvEtVHopZnuh9JxilONUaYyaRNwAA9iJFktC6bEO9nzTnvhaayFvqgj47L1Ou+o4roajDZ3+JfmA/miiad2QtFHc9LSKS/F+fNli8z8iplas286wqSOcc8lr+BYhSqbWvQZBZ5wNrsgTceqf5XLsnOXzefYhCibhPaZrxKIBqzDNMjaXzcESuZRcjJw2kBixN0CGmOd22w/PdPxrlydGmYSFGwg8Vqp7jWYsq9yh5JRxpBq+ESXwtK/MloSsDi07zXODMqGSpOFtdMMM40TkLazCesJaUBCVgyc=
+before_script:
+  - npm install -g gulp
+  - npm install
+script:
+  - gulp jade
+  - gulp sass
+  - cd app
+  - git init
+  - 'git config user.name "Pavel Apleenko"'
+  - 'git config user.email "19paul91@mail.ru"'
+  - git add .
+  - 'git commit -m "Deploy to GitHub Pages"'
+  - 'git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1'
