@@ -60,8 +60,13 @@
     font-style: normal;
 
 }
-
-
+//Color-sheme-start
+$ping: #C2185B;
+$fb-color: #2E4CA6; // color facebook
+$vk-color: #00538A; // color vkontakte
+$tw-color: #3699EB; // color twitter
+$bh-color: #000; // color behance
+//Color-sheme-end
 
 /*  General CSS*/
 body{
@@ -157,7 +162,7 @@ h5, h6          { font-weight: bolder }
 
     header nav ul li a:hover,
     header nav ul li a.selected{
-        color: #969595;
+        color: $ping;
     }
 
     header .footer{

@@ -18,39 +18,43 @@
     },
     {
       "url": "nameUrl",
-      "title": "About"
+      "title": "Web-design"
     },
     {
       "url": "nameUrl",
-      "title": "The Team"
+      "title": "Ui/Ux design"
     },
     {
       "url": "nameUrl",
-      "title": "Journal"
+      "title": "Icons set"
+    },
+    {
+      "url": "nameUrl",
+      "title": "Free fonts"
     },
     {
       "url": "/contact.html",
-      "title": "Contact Us"
+      "title": "Contact us"
     }
   ],
   "sociallink": [
     {
-      "url": "#",
+      "url": "https://www.facebook.com/profile.php?id=100003457797309",
       "title": "Facebook",
       "class": "fb"
     },
     {
-      "url": "#",
+      "url": "https://www.behance.net/allakin",
       "title": "Behance",
-      "class": "behance"
+      "class": "bh"
     },
     {
-      "url": "#",
+      "url": "https://twitter.com/AnpleenkoPavel",
       "title": "Twitter",
-      "class": "twitter"
+      "class": "tw"
     },
     {
-      "url": "#",
+      "url": "http://vk.com/anpleenko",
       "title": "VK",
       "class": "vk"
     }
