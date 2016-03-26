@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var fs = require('fs');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var browserSync = require('browser-sync').create();
@@ -13,9 +14,12 @@ gulp.task('sass', function () {
 });
 
 gulp.task('jade', function() {
+  var data = JSON.parse(fs.readFileSync('./assets/data/data.json', 'utf-8'));
 
-  gulp.src('./assets/jade/!(_)*.jade')
-  .pipe(jade())
+  return gulp.src('./assets/jade/!(_)*.jade')
+  .pipe(jade({
+      locals: data
+  }))
   .pipe(gulp.dest('./app/'))
   .on('end', browserSync.reload)
 });

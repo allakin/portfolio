@@ -5,31 +5,13 @@
 #menu_icon
 nav
   ul
-    li
-      a.selected(href='index.html') Home
-    li
-      a(href='#') About
-    li
-      a(href='#') The Team
-    li
-      a(href='#') Journal
-    li
-      a(href='contact.html') Contact Us
-// end navigation menu
+    each value in menu
+      li: a(href='#{value.url}') #{value.title}
 .footer.clearfix
   ul.social.clearfix
-    li
-      a.fb(href='#', data-title='Facebook')
-    li
-      a.google(href='#', data-title='Google +')
-    li
-      a.behance(href='#', data-title='Behance')
-    //
-      <li><a href="#" class="twitter" data-title="Twitter"></a></li>
-      <li><a href="#" class="dribble" data-title="Dribble"></a></li>
-    li
-      a.rss(href='#', data-title='RSS')
-  // end social
+    each value in sociallink
+      li: a(class='#{value.class}', href='#{value.url}', data-title='#{value.title}')
+    
   .rights
     p Copyright © 2014 magnetic.
     p

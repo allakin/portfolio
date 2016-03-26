@@ -1,0 +1,58 @@
+{
+  "tumbnail": [
+    {
+      "pageUrl": "test",
+      "imgUrl": "test",
+      "title": "test"
+    },
+    {
+      "pageUrl": "test",
+      "imgUrl": "test",
+      "title": "test"
+    }
+  ],
+  "menu": [
+    {
+      "url": "/index.html",
+      "title": "Home"
+    },
+    {
+      "url": "nameUrl",
+      "title": "About"
+    },
+    {
+      "url": "nameUrl",
+      "title": "The Team"
+    },
+    {
+      "url": "nameUrl",
+      "title": "Journal"
+    },
+    {
+      "url": "/contact.html",
+      "title": "Contact Us"
+    }
+  ],
+  "sociallink": [
+    {
+      "url": "#",
+      "title": "Facebook",
+      "class": "fb"
+    },
+    {
+      "url": "#",
+      "title": "Behance",
+      "class": "behance"
+    },
+    {
+      "url": "#",
+      "title": "Twitter",
+      "class": "twitter"
+    },
+    {
+      "url": "#",
+      "title": "VK",
+      "class": "vk"
+    }
+  ]
+}

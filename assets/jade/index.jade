@@ -1,11 +1,10 @@
 extends _layout
 
 block content
-  -for(var i = 0; i < 3; i++)
-    -for(var g = 0; g < 6; g++)
-      .work
-        a(href='inner.html')
-          img.media(src='img/work#{g + 1}.jpg', alt='')
-          .caption
-            .work_title
-              h1 culpa qui officia deserunt mollit
+  each value in tumbnail
+    .work
+      a(href='#{value.pageUrl}')
+        img.media(src='#{value.imgUrl}', alt='')
+        .caption
+          .work_title
+            h1= value.title
