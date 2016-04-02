@@ -1,8 +1,8 @@
-abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite,
-code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure,
-footer, form, h4, header, hgroup, html, i, iframe, img, ins, kbd, label, legend,
-li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong,
-sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+abbr, address, article, aside, audio, b, blockquote, canvas, caption, cite, code,
+dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer,
+form, h4, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li,
+mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub,
+summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -12,20 +12,25 @@ sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video 
     background: 0 0;
 }
 
-a, h1, h2, h3, h5, h6 {
+body {
+    margin: 0;
+    background: #fff;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+a, body, h1, h2, h3, h5, h6 {
     vertical-align: baseline;
     background: 0 0;
 }
 
-h1, h2, h3, h5, h6 {
+body, h1, h2, h3, h5, h6 {
     padding: 0;
     border: 0;
     outline: 0;
-}
-
-body {
-    line-height: 1;
-    background: #fff;
 }
 
 img {
@@ -100,35 +105,35 @@ input, select {
 }
 
 @font-face {
-    font-family: 'raleway-regular';
-    src: url(../fonts/raleway-regular.eot);
-    src: url(../fonts/raleway-regular.eot?#iefix) format("embedded-opentype"),
-         url(../fonts/raleway-regular.woff) format("woff"),
-         url(../fonts/raleway-regular.ttf) format("truetype"),
-         url(../fonts/raleway-regular.svg#ralewayregular) format("svg");
+    font-family: 'Roboto';
+    src: local("Roboto Light"),
+         local("Roboto-Light"),
+         url(../fonts/robotolight.woff2) format("woff2"),
+         url(../fonts/robotolight.woff) format("woff"),
+         url(../fonts/robotolight.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"),
+         local("Roboto-Regular"),
+         url(../fonts/roboto.woff2) format("woff2"),
+         url(../fonts/roboto.woff) format("woff"),
+         url(../fonts/roboto.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'raleway-bold';
-    src: url(../fonts/raleway-bold.eot);
-    src: url(../fonts/raleway-bold.eot?#iefix) format("embedded-opentype"),
-         url(../fonts/raleway-bold.woff) format("woff"),
-         url(../fonts/raleway-bold.ttf) format("truetype"),
-         url(../fonts/raleway-bold.svg#ralewaybold) format("svg");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'raleway-semibold';
-    src: url(../fonts/raleway-semibold.eot);
-    src: url(../fonts/raleway-semibold.eot?#iefix) format("embedded-opentype"),
-         url(../fonts/raleway-semibold.woff) format("woff"),
-         url(../fonts/raleway-semibold.ttf) format("truetype"),
-         url(../fonts/raleway-semibold.svg#ralewaysemibold) format("svg");
-    font-weight: 400;
+    font-family: 'Roboto';
+    src: local("Roboto Bold"),
+         local("Roboto-Bold"),
+         url(../fonts/robotobold.woff2) format("woff2"),
+         url(../fonts/robotobold.woff) format("woff"),
+         url(../fonts/robotobold.ttf) format("truetype");
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -137,16 +142,13 @@ input, select {
     margin: 0 auto;
 }
 
-.main .work a .caption, header nav ul li a, header ul.social li a {
-            transition: all .1s linear;
+.main .work a .caption, a {
     -webkit-transition: all .1s linear;
-       -moz-transition: all .1s linear;
-         -o-transition: all .1s linear;
+            transition: all .1s linear;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #4b4848;
-    font-family: "raleway-regular", arial;
     letter-spacing: 1px;
 }
 
@@ -175,8 +177,9 @@ h6 {
     margin: 1.67em 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bolder;
+#map .map_address .address, #map .map_tel .tel, b, h1, h2, h3, h4, h5, h6,
+strong {
+    font-weight: 700;
 }
 
 .clearfix:after, .clearfix:before {
@@ -252,7 +255,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 0;
     z-index: 77;
     color: #454545;
-    font-family: "raleway-regular", arial;
     font-size: 16px;
     letter-spacing: .5px;
     border-bottom: 1px solid #bfbbbb;
@@ -283,7 +285,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .top .title {
     color: #4b4848;
-    font-family: "raleway-bold", arial;
     font-size: 26px;
     font-weight: 700;
     background: rgba(255, 255, 255, .7);
@@ -335,7 +336,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .content, .content p {
     color: #4b4848;
-    font-family: "raleway-regular", arial;
     font-size: 15px;
 }
 
@@ -353,14 +353,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
     color: #4b4848;
-    font-family: "raleway-semibold", arial;
     font-weight: 700;
     line-height: 28px;
     margin-bottom: 30px;
 }
 
 #map .map_adresse {
-    font-family: 'raleway-regular', arial;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 1px;
@@ -368,11 +366,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #map .map_address, #map .map_tel {
     padding: 5px;
-}
-
-#map .map_address .address, #map .map_tel .tel {
-    font-family: 'raleway-bold', arial;
-    font-weight: bolder;
 }
 
 #map img {
@@ -389,7 +382,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 7px 10px;
     background: #454545;
     color: #fff;
-    font-family: "raleway-regular", arial;
     font-size: 12px;
     white-space: nowrap;
     z-index: 999;
@@ -442,7 +434,6 @@ h1, h2, h3, h4, h5, h6 {
 
     header nav ul li a {
         color: #454545;
-        font-family: "raleway-regular", arial;
         font-size: 14px;
         text-decoration: none;
         letter-spacing: 1px;
@@ -499,14 +490,12 @@ h1, h2, h3, h4, h5, h6 {
 
     header .rights p {
         color: #454545;
-        font-family: "raleway-regular", arial;
         font-size: 11px;
         letter-spacing: 1px;
         line-height: 18px;
     }
 
     header .rights a {
-        font-family: "raleway-bold", arial;
         font-weight: 700;
         text-decoration: none;
     }
@@ -559,7 +548,6 @@ h1, h2, h3, h4, h5, h6 {
         padding: 30px 0;
         text-align: center;
         color: #454545;
-        font-family: "raleway-regular", arial;
         font-size: 14px;
         text-decoration: none;
         border-top: 1px solid #c2185b;

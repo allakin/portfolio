@@ -58,7 +58,6 @@
 
     header nav ul li a{
         color: #454545;
-        font-family: "raleway-regular", arial;
         font-size: 14px;
         text-decoration: none;
         letter-spacing: 1px;
@@ -125,15 +124,13 @@
 
     header .rights p{
         color: #454545;
-        font-family: "raleway-regular", arial;
         font-size: 11px;
         letter-spacing: 1px;
         line-height: 18px;
     }
 
     header .rights a{
-        font-family: "raleway-bold", arial;
-        font-weight: bold;
+        font-weight: 700;
         text-decoration: none;
     }
     #menu_icon,
@@ -165,8 +162,6 @@
     width: 100%;
     height: 100%;
     padding-left: 300px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
     z-index: 55;
@@ -199,7 +194,6 @@
           padding: 20px 0;
           z-index: 77;
           color: #454545;
-          font-family: "raleway-regular", arial;
           font-size: 16px;
           letter-spacing: .5px;
           border-bottom: 1px solid #bfbbbb;
@@ -233,9 +227,8 @@
   .title{
     display: block;
     width: 100%;color: #4b4848;
-    font-family: "raleway-bold", arial;
     font-size: 26px;
-    font-weight: bold;
+    font-weight: 700;
     background: rgba(255, 255, 255, .7);
     padding: 20px;
     text-transform: uppercase;
@@ -290,7 +283,6 @@
 
 .content{
     color: #4b4848;
-    font-family: "raleway-regular", arial;
     font-size: 15px;
     line-height: 22px;
     padding: 60px 30px;
@@ -298,15 +290,13 @@
     box-sizing: border-box;
     p{
       color: #4b4848;
-      font-family: "raleway-regular", arial;
       font-size: 15px;
       line-height: 24px;
       margin-bottom: 60px;
     }
     h1, h2, h3, h4, h5, h6{
       color: #4b4848;
-      font-family: "raleway-semibold", arial;
-      font-weight: bold;
+      font-weight: 700;
       line-height: 28px;
       margin-bottom: 30px;
 
@@ -316,7 +306,6 @@
 /*  Contact page map  */
 #map{
   .map_adresse{
-    font-family: 'raleway-regular', arial;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 1px;
@@ -327,8 +316,7 @@
   }
   .map_address .address,
   .map_tel .tel{
-    font-family: 'raleway-bold', arial;
-    font-weight: bolder;
+    font-weight: 700;
   }
   img{
     max-width: none;
@@ -341,7 +329,6 @@
   padding: 7px 10px;
   background: #454545;
   color: #fff;
-  font-family: "raleway-regular", arial;
   font-size: 12px;
   position: absolute;
   white-space: nowrap;
@@ -401,7 +388,6 @@
               padding: 30px 0;
               text-align: center;
               color: #454545;
-              font-family: "raleway-regular", arial;
               font-size: 14px;
               text-decoration: none;
               border-top: 1px solid $ping;
