@@ -28,7 +28,8 @@ gulp.task('jade', function() {
 gulp.task('serve', ['sass', 'jade'], function() {
 
     browserSync.init({
-        server: "./app"
+        server: "./app",
+        open: false
     });
 });
 
