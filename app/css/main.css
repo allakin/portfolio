@@ -75,7 +75,6 @@ ins {
 
 mark {
     font-style: italic;
-    font-weight: 700;
 }
 
 del {
@@ -147,11 +146,6 @@ input, select {
             transition: all .1s linear;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #4b4848;
-    letter-spacing: 1px;
-}
-
 h1 {
     font-size: 2em;
     margin: .67em 0;
@@ -177,7 +171,12 @@ h6 {
     margin: 1.67em 0;
 }
 
-#map .map_address .address, #map .map_tel .tel, b, h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6 {
+    color: #4b4848;
+    letter-spacing: 1px;
+}
+
+#map .map_address .address, #map .map_tel .tel, b, h1, h2, h3, h4, h5, h6, mark,
 strong {
     font-weight: 700;
 }
