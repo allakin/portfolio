@@ -505,6 +505,12 @@ strong {
     }
 }
 
+@media (max-width:550px) {
+    .main .work {
+        width: 100%;
+    }
+}
+
 @media (max-width:1099px) {
     header {
         display: block;
@@ -575,11 +581,5 @@ strong {
 
     #map {
         margin: 0 !important;
-    }
-}
-
-@media (max-width:550px) {
-    .main .work {
-        width: 100%;
     }
 }
