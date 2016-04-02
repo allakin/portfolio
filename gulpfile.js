@@ -1,15 +1,28 @@
 'use strict';
 
-var gulp = require('gulp');
-var fs = require('fs');
-var sass = require('gulp-sass');
-var watch = require('gulp-watch');
-var jade = require('gulp-jade');
-var browserSync = require('browser-sync').create();
+var gulp          = require('gulp');
+var fs            = require('fs');
+var sass          = require('gulp-sass');
+var watch         = require('gulp-watch');
+var jade          = require('gulp-jade');
+var mqpacker      = require('css-mqpacker');
+var autoprefixer  = require('autoprefixer');
+var perfectionist = require('perfectionist');
+var postcss       = require('gulp-postcss');
+var csso          = require('gulp-csso');
+var browserSync   = require('browser-sync').create();
+
+var PROCESSORS = [
+    autoprefixer({ browsers: ['last 2 versions', '> 1%'] }),
+    mqpacker
+]
 
 gulp.task('sass', function () {
   return gulp.src('./assets/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(postcss(PROCESSORS))
+    .pipe(csso())
+    .pipe(postcss([perfectionist({})]))
     .pipe(gulp.dest('./app/css'))
     .pipe(browserSync.stream());
 });
