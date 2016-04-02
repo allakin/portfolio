@@ -1,0 +1,8 @@
+extends _layout
+
+block content
+  h1 Page Ux/Ui design
+  each value in tumbnail
+    .work
+      a(href='#{value.pageUrl}')
+        img.media(src='#{value.imgUrl}', alt='')

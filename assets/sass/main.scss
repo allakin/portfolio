@@ -1,3 +1,6 @@
+@import "var";
+@import "fonts";
+@import "base";
 /*
 
     Template Author : pixelhint.com
@@ -19,106 +22,6 @@
 
 
 */
-
-
-
-/*  Fonts  */
-@font-face {
-    font-family: 'raleway-regular';
-    src: url('../fonts/raleway-regular.eot');
-    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-regular.woff') format('woff'),
-         url('../fonts/raleway-regular.ttf') format('truetype'),
-         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'raleway-bold';
-    src: url('../fonts/raleway-bold.eot');
-    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-bold.woff') format('woff'),
-         url('../fonts/raleway-bold.ttf') format('truetype'),
-         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'raleway-semibold';
-    src: url('../fonts/raleway-semibold.eot');
-    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-semibold.woff') format('woff'),
-         url('../fonts/raleway-semibold.ttf') format('truetype'),
-         url('../fonts/raleway-semibold.svg#ralewaysemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-//Color-sheme-start
-$ping: #C2185B;
-$fb-color: #2E4CA6; // color facebook
-$vk-color: #00538A; // color vkontakte
-$tw-color: #3699EB; // color twitter
-$bh-color: #000; // color behance
-//Color-sheme-end
-
-/*  General CSS*/
-body{
-    background: #fff;
-}
-
-.wrapper{
-    width: 92.72727272727273%;
-    margin: 0 auto;
-}
-
-header ul.social li a,
-.main .work a .caption,
-header nav ul li a{
-    transition:all .1s linear;
-    -webkit-transition:all .1s linear;
-    -moz-transition:all .1s linear;
-    -o-transition:all .1s linear;
-}
-
-h1, h2, h3, h4, h5 ,h6{
-    color: #4b4848;
-    font-family: "raleway-regular", arial;
-    letter-spacing: 1px;
-}
-
-h1              { font-size: 2em; margin: .67em 0 }
-h2              { font-size: 1.5em; margin: .75em 0 }
-h3              { font-size: 1.17em; margin: .83em 0 }
-h5              { font-size: .83em; margin: 1.5em 0 }
-h6              { font-size: .75em; margin: 1.67em 0 }
-h1, h2, h3, h4,
-h5, h6          { font-weight: bolder }
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-
-
-
-
-
 
 /*  Header  */
 @media (min-width:1099px){
@@ -536,55 +439,55 @@ h5, h6          { font-weight: bolder }
 
 /*  Responsive code  */
 @media (max-width:1099px){
-
     header{
-        display: block;
-        width: 100%;
-        min-height: 100px;
-        padding: 0;
-        position: relative;
-    }
-    header .logo{
+      display: block;
+      width: 100%;
+      min-height: 100px;
+      padding: 0;
+      position: relative;
+      .logo{
         margin: 40px 0 0 30px;
         float: left;
-    }
-    header .footer{
+      }
+      .footer{
         display: none;
-    }
-    header #menu_icon,
-    header .close_menu{
+      }
+      #menu_icon, .close_menu{
         float: right;
         margin: 30px 30px 0 0;
-    }
-
-    header nav{
+      }
+      nav{
         width: 100%;
         position: absolute;
         top: 100px;
         left: 0;
         z-index: 9999;
+        ul{
+          list-style: none;
+          display: none;
+          position: relative;
+          li{
+            a{
+              display: block;
+              width: 100%;
+              padding: 30px 0;
+              text-align: center;
+              color: #454545;
+              font-family: "raleway-regular", arial;
+              font-size: 14px;
+              text-decoration: none;
+              border-top: 1px solid $ping;
+              background: #fff;
+              &:active{
+                color: #fff;
+                background: $ping;
+              }
+            }
+          }
+        }
+      }
     }
 
-    header nav ul{
-        list-style: none;
-        display: none;
-        position: relative;
-    }
-    header nav ul li a{
-        display: block;
-        width: 100%;
-        padding: 30px 0;
-        text-align: center;
-        color: #454545;
-        font-family: "raleway-regular", arial;
-        font-size: 14px;
-        text-decoration: none;
-        border-top: 1px solid #f7f5f5;
-        background: #fff;
-    }
-    header nav ul li a:active{
-        background: #f7f5f5;
-    }
     #menu_icon,
     .close_menu,
     .show_menu{

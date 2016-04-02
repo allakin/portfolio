@@ -1,24 +1,3 @@
-/*
-
-    Template Author : pixelhint.com
-    Author Email    : contact@pixelhint.com
-    Template Name   : Magnetic
-
-
-    *****************************************
-
-
-    - Fonts
-    - General CSS
-    - Header
-    - Home/portfolio
-    - Inner page
-    - Map/Contact page
-    - Tooltip
-    - Responsive code
-
-
-*/
 /*  Fonts  */
 @font-face {
   font-family: 'raleway-regular';
@@ -97,6 +76,27 @@ h5, h6 {
 .clearfix {
   *zoom: 1; }
 
+/*
+
+    Template Author : pixelhint.com
+    Author Email    : contact@pixelhint.com
+    Template Name   : Magnetic
+
+
+    *****************************************
+
+
+    - Fonts
+    - General CSS
+    - Header
+    - Home/portfolio
+    - Inner page
+    - Map/Contact page
+    - Tooltip
+    - Responsive code
+
+
+*/
 /*  Header  */
 @media (min-width: 1099px) {
   header {
@@ -408,38 +408,38 @@ h5, h6 {
     min-height: 100px;
     padding: 0;
     position: relative; }
-  header .logo {
-    margin: 40px 0 0 30px;
-    float: left; }
-  header .footer {
-    display: none; }
-  header #menu_icon,
-  header .close_menu {
-    float: right;
-    margin: 30px 30px 0 0; }
-  header nav {
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 9999; }
-  header nav ul {
-    list-style: none;
-    display: none;
-    position: relative; }
-  header nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 30px 0;
-    text-align: center;
-    color: #454545;
-    font-family: "raleway-regular", arial;
-    font-size: 14px;
-    text-decoration: none;
-    border-top: 1px solid #f7f5f5;
-    background: #fff; }
-  header nav ul li a:active {
-    background: #f7f5f5; }
+    header .logo {
+      margin: 40px 0 0 30px;
+      float: left; }
+    header .footer {
+      display: none; }
+    header #menu_icon, header .close_menu {
+      float: right;
+      margin: 30px 30px 0 0; }
+    header nav {
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      z-index: 9999; }
+      header nav ul {
+        list-style: none;
+        display: none;
+        position: relative; }
+        header nav ul li a {
+          display: block;
+          width: 100%;
+          padding: 30px 0;
+          text-align: center;
+          color: #454545;
+          font-family: "raleway-regular", arial;
+          font-size: 14px;
+          text-decoration: none;
+          border-top: 1px solid #C2185B;
+          background: #fff; }
+          header nav ul li a:active {
+            color: #fff;
+            background: #C2185B; }
   #menu_icon,
   .close_menu,
   .show_menu {

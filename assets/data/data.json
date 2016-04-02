@@ -13,24 +13,20 @@
   ],
   "menu": [
     {
-      "url": "main.html",
+      "url": "index.html",
       "title": "Home"
     },
     {
-      "url": "web-design.html",
+      "url": "design-works.html",
       "title": "Web-design"
     },
     {
-      "url": "ux-ui.html",
+      "url": "ux-ui-works.html",
       "title": "Ui/Ux design"
     },
     {
-      "url": "icons-set.html",
-      "title": "Icons set"
-    },
-    {
-      "url": "free-fonts.html",
-      "title": "Free fonts"
+      "url": "icons-works.html",
+      "title": "Icon every day"
     },
     {
       "url": "contact.html",
