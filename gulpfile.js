@@ -32,6 +32,7 @@ gulp.task('serve', ['sass', 'jade'], function() {
 
     gulp.watch('./assets/sass/**/*.scss', ['sass']);
     gulp.watch('./assets/jade/**/*.jade', ['jade']);
+    gulp.watch('./assets/data/data.json', ['jade']);
 });
 
 gulp.task('default', ['serve']);

@@ -13,27 +13,27 @@
   ],
   "menu": [
     {
-      "url": "/index.html",
+      "url": "main.html",
       "title": "Home"
     },
     {
-      "url": "nameUrl",
+      "url": "web-design.html",
       "title": "Web-design"
     },
     {
-      "url": "nameUrl",
+      "url": "ux-ui.html",
       "title": "Ui/Ux design"
     },
     {
-      "url": "nameUrl",
+      "url": "icons-set.html",
       "title": "Icons set"
     },
     {
-      "url": "nameUrl",
+      "url": "free-fonts.html",
       "title": "Free fonts"
     },
     {
-      "url": "/contact.html",
+      "url": "contact.html",
       "title": "Contact us"
     }
   ],
