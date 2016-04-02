@@ -20,7 +20,7 @@ gulp.task('jade', function() {
   return gulp.src('./assets/jade/!(_)*.jade')
   .pipe(jade({
       locals: data
-  }))
+  })).on('error', console.log)
   .pipe(gulp.dest('./app/'))
   .on('end', browserSync.reload)
 });
