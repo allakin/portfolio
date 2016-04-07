@@ -19,9 +19,15 @@
 */
 
 /*  Header  */
-
-@media (min-width:1099px) {
-  header {
+header{
+  @media (max-width:1098px) {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    padding: 0;
+    position: relative;
+  }
+  @media (min-width:1099px) {
     display: block;
     position: fixed;
     top: 0;
@@ -34,93 +40,109 @@
     overflow: hidden;
     z-index: 9999;
   }
-
-  header .logo {
-    margin-top: 100px;
+  .logo{
+    @media (min-width:1099px) {
+      margin-top: 100px;
+    }
   }
-
-  header nav ul {
-    display: block;
-    overflow: hidden;
-    margin-top: 100px;
-    list-style: none;
+  nav{
+    ul {
+      @media (min-width:1099px){
+        display: block;
+        overflow: hidden;
+        margin-top: 100px;
+        list-style: none;
+      }
+      li{
+        @media (min-width:1099px) {
+          display: block;
+          margin-bottom: 30px;
+        }
+        a{
+          @media (min-width:1099px) {
+            color: #454545;
+            font-size: 14px;
+            text-decoration: none;
+            letter-spacing: 1px;
+          }
+          &:hover,&.selected{
+            @media (min-width:1099px) {
+              color: $ping;
+            }
+          }
+        }
+      }
+    }
   }
-
-  header nav ul li {
-    display: block;
-    margin-bottom: 30px;
+  .footer{
+    @media (min-width:1099px) {
+      position: absolute;
+      bottom: 50px;
+    }
   }
-
-  header nav ul li a {
-    color: #454545;
-    font-size: 14px;
-    text-decoration: none;
-    letter-spacing: 1px;
+  ul.social{
+    @media (min-width:1099px) {
+      list-style: none;
+      margin-bottom: 5px;
+    }
+    li{
+      @media (min-width:1099px) {
+        display: block;
+        float: left;
+        position: relative;
+        margin: 0 15px 15px 0;
+      }
+      a{
+        @media (min-width:1099px) {
+          display: block;
+          width: 30px;
+          height: 30px;
+          background: url('../img/sm.png') no-repeat;
+          background-position: 0 0;
+        }
+        &:hover{
+          @media (min-width:1099px) {
+            background: url('../img/sm_hover.png') no-repeat;
+          }
+        }
+        &.fb, &.fb:hover{
+          @media (min-width:1099px) {
+            background-position: 0 0;
+          }
+        }
+        &.bh,&.bh:hover{
+          @media (min-width:1099px) {
+            background-position: -31px 0;
+          }
+        }
+        &.tw,&.tw:hover{
+          @media (min-width:1099px) {
+            background-position: -62px 0;
+          }
+        }
+        &.vk,&.vk:hover{
+          @media (min-width:1099px) {
+            background-position: -93px 0;
+          }
+        }
+      }
+    }
   }
-
-  header nav ul li a:hover, header nav ul li a.selected {
-    color: $ping;
-  }
-
-  header .footer {
-    position: absolute;
-    bottom: 50px;
-  }
-
-  header ul.social {
-    list-style: none;
-    margin-bottom: 5px;
-  }
-
-  header ul.social li {
-    display: block;
-    float: left;
-    position: relative;
-    margin: 0 15px 15px 0;
-  }
-
-  header ul.social li a {
-    display: block;
-    width: 30px;
-    height: 30px;
-    background: url('../img/sm.png') no-repeat;
-    background-position: 0 0;
-  }
-
-  header ul.social li a:hover {
-    background: url('../img/sm_hover.png') no-repeat;
-  }
-
-  header ul.social li a.fb, header ul.social li a.fb:hover {
-    background-position: 0 0;
-  }
-
-  header ul.social li a.bh, header ul.social li a.bh:hover {
-    background-position: -31px 0;
-  }
-
-  header ul.social li a.tw, header ul.social li a.tw:hover {
-    background-position: -62px 0;
-  }
-
-  header ul.social li a.vk, header ul.social li a.vk:hover {
-    background-position: -93px 0;
-  }
-
-  header .rights p {
-    color: #454545;
-    font-size: 11px;
-    letter-spacing: 1px;
-    line-height: 18px;
-  }
-
-  header .rights a {
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  #menu_icon, .close_menu {
-    display: none;
+  .rights{
+    p{
+      @media (min-width:1099px) {
+        color: #454545;
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 18px;
+      }
+    }
+    a{
+      @media (min-width:1099px) {
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -131,6 +153,9 @@
   height: 40px;
   cursor: pointer;
   background: url('../img/men_icons.png') no-repeat;
+  @media (min-width:1099px) {
+    display: none;
+  }
 }
 
 #menu_icon {
@@ -363,17 +388,16 @@
 
 /*  Responsive code  */
 
-@media (max-width:1099px) {
+@media (max-width:1098px) {
   header {
-    display: block;
-    width: 100%;
-    min-height: 100px;
-    padding: 0;
-    position: relative;
-
     .logo {
       margin: 40px 0 0 30px;
-      float: left;
+      //float: left;
+      display: inline;
+    }
+    .logo-img {
+      max-width: 20%;
+      margin-top: 35px;
     }
 
     .footer {
