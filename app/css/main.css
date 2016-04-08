@@ -587,8 +587,34 @@ strong {
     }
 }
 
+@media (max-width:780px) {
+    header .logo-img {
+        max-width: 20%;
+        margin-top: 40px;
+    }
+}
+
 @media (max-width:550px) {
+    header .logo-img {
+        max-width: 30%;
+        margin-top: 40px;
+    }
+
     .main .work {
         width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    header .logo-img {
+        max-width: 30%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:320px) {
+    header .logo-img {
+        max-width: 40%;
+        margin-top: 45px;
     }
 }

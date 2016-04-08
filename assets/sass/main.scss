@@ -56,6 +56,22 @@ header{
       max-width: 20%;
       margin-top: 35px;
     }
+    @media (max-width:780px) {
+      max-width: 20%;
+      margin-top: 40px;
+    }
+    @media (max-width:550px) {
+      max-width: 30%;
+      margin-top: 40px;
+    }
+    @media (max-width:480px) {
+      max-width: 30%;
+      margin-top: 40px;
+    }
+    @media (max-width:320px) {
+      max-width: 40%;
+      margin-top: 45px;
+    }
   }
   nav{
     @media (max-width:1098px) {
