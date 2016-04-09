@@ -2,12 +2,22 @@
   "tumbnail": [
     {
       "pageUrl": "test",
-      "imgUrl": "test",
+      "imgUrl": "../img/work1.jpg",
       "title": "test"
     },
     {
       "pageUrl": "test",
-      "imgUrl": "test",
+      "imgUrl": "../img/work2.jpg",
+      "title": "test"
+    },
+    {
+      "pageUrl": "test",
+      "imgUrl": "../img/work3.jpg",
+      "title": "test"
+    },
+    {
+      "pageUrl": "test",
+      "imgUrl": "../img/work4.jpg",
       "title": "test"
     }
   ],
